@@ -1,4 +1,3 @@
-
 workspace "hash_cracker"
     architecture "x64"
     startproject "cpu_benchmark"
@@ -65,7 +64,7 @@ project "test"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("obj/" .. outputdir .. "/%{prj.name}")
 
-	libdirs { "/usr/lib64/" }
+
 	
 	links
 	{
@@ -81,7 +80,6 @@ project "test"
     includedirs
 	{
         "%{prj.name}/source/",
-		"%{IncludeDir.openssl}",
 		"app_lib/source",
 		"%{IncludeDir.BOOST}"
 	}
